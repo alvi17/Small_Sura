@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#70b17a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <ImageView android:id="@+id/imageView2"
+        android:background="#4a935e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:textSize="20sp" android:textColor="#ffe819" android:id="@+id/ss_font_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="  সূরা ফাতিহা "
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@id/scrollView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        >
+
+        <Button android:id="@+id/pause"
+            android:background="@drawable/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:onClick="pause_surah" />
+        <Button android:id="@+id/music_icon"
+            android:background="@drawable/music_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp" />
+
+        <Button android:id="@+id/play"
+            android:background="@drawable/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="play_surah" />
+
+    </LinearLayout>
+
+
+    <ScrollView android:id="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView  android:background="@drawable/surah_fatiha" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="22sp"
+                android:textColor="#010101"
+
+                android:id="@+id/ss_font_ar"
+                android:background="#ffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="12dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۱﴾ الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۲﴾ مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۳﴾ اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۴﴾ اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۵﴾ صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۙ۬ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ٪﴿۷﴾"
+                android:lineSpacingMultiplier="1.2" />
+
+            <TextView  android:textSize="20sp" android:textStyle="bold"
+                android:textColor="#010101"
+                android:background="#73c473"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="উচ্চারণঃ " />
+
+            <TextView
+                android:id="@+id/ss_font_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#c1ffc1"
+                android:padding="5dp"
+                android:text="আলহামদু লিল্লাহি রাব্বিল আ'লামীন। আররাহমানির রাহীম। মা-লিকি ইয়াওমিদ্দীন। ইয়্যা কানা'বুদু অইয়্যা কানাসতা'ঈন। ইহদিনাছ ছিরা তায়াল মুসতাকীম। ছিরা তায়াল্লাযীনা আন'আমতা আলাইহীম। গাইরিল মাগদূবি আলাইহীম ওয়ালাদ্বোয়া-ল্লীন।"
+                android:textColor="#010101"
+                android:textSize="20sp" />
+
+            <TextView  android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#010101" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="#efb15f" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="অর্থঃ " />
+            <TextView  android:textSize="20sp" android:textColor="#010101" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/ss_font_3" android:background="#ede2bc" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="সমস্ত প্রশংসা আল্লাহর জন্য, যিনি নিখিল জাহানের রব। যিনি পরম করুণাময়, অসীম দয়ালু। যিনি বিচার দিনের মালিক। আমরা কেবল তোমারই গোলামী করি এবং তোমারই কাছে সাহায্য চাই। আমাদেরকে সরল সঠিক পথ প্রদর্শন কর। ঐ সমস্ত লোকেদের পথ যাদেরকে তুমি নিয়ামত দান করেছ। যারা অভিশপ্ত নয় এবং পথভ্রষ্ট নয় তাদের পথ আমাদেরকে প্রদর্শন কর।" />
+            <TextView  android:textSize="20sp" android:textStyle="bold" android:textColor="#010101" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="#329dca" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="তাফসীরঃ" />
+            <TextView  android:textSize="20sp" android:textColor="#010101"
+                android:id="@+id/ss_font_4" android:background="#beecff" android:paddingLeft="10dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" android:text="আয়াতঃ ১-৪
+আরবী শব্দ “রহমান” ও “রহীম” ইংরেজিতে অনুবাদ করা হয়ে “Most gracious” ও “Most Merciful”। বাংলার অনুবাদ করা হয়েছে দয়াময় ও পরম করুণাময়। কিন্তু এ দু”টো শব্দ অনুবাদ করা বেশ দুঃসাধ্য। আরবী ভাষা এত সমৃদ্ধ, এত বাঙ্ময়, যে এ দু”টো শব্দের মধ্যে তুলনা করা ইংরেজি বা বাংলা ভাষার শব্দ ভাণ্ডারের সাহায্যে সম্ভব নয়। ইংরেজি ভাষাতে অপেক্ষাকৃত ভালো [Comparative degree] তখনই বোঝানো যায় যখন অনেকের মধ্যে তুলনা চলে। কিন্তু আল্লাহ্‌ এক এবং অদ্বিতীয়। তিনি অতুলনীয়। তিনি সময় বা স্থানের উর্দ্ধে। সুতরাং তাঁর দয়া বা কৃপার গভীরতা কখনই তুলনামূলকভাবে বোঝানো সম্ভব নয়।
+
+“দয়া”-পাপী-তাপীর জন্য ক্ষমা। যে ক্ষমার [forgiveness] শীতল বারিধারায় পাপীরা শান্তি লাভ করে। যখনই বান্দা তার কৃতকর্মের জন্য অনুতপ্ত হয় এবং সৃষ্টার কাছে ক্ষমা প্রার্থী হয়-তখনই মহান আল্লাহ্‌র দয়া বা ক্ষমা বা রহমত আমাদের বিধৌত করে। তাই তিনি “রহিম”। তাঁর দয়ার আমরা প্রার্থী। এখানে রহিম কথাটির দ্বারা আল্লাহ্‌র দয়াকে প্রকাশ করা হয়েছে।
+
+কিন্তু “রহমত” কথাটির অর্থ অনেক ব্যাপক। এই রহমত বা দয়া কারও চাইবার অপেক্ষা রাখে না। এই রহমত সমগ্র বিশ্ব জাহানের জন্য। তাই এই বিশ্ব চরাচরে যা কিছু সৃষ্টি হয়েছে এবং ভবিষ্যতে যা কিছু সৃষ্টি হবে, সব কিছুর জন্য সমভাবে প্রযোজ্য। আল্লাহ্‌র এই করুণাধারা তাঁর সৃষ্টিকে ঘিরে থাকে তাকে রক্ষা করে, সংরক্ষণ করে, সুপথে পরিচালিত করে। ফলে সৃষ্টি হয় বিকশিত, প্রস্ফুটিত। পরিপূর্ণ রহমত হচ্ছে সম্পূর্ণ, পূর্ণাঙ্গ-যা আবহমান কাল থেকে তাঁর সৃষ্টির উপর বর্ষিত হচ্ছে। এ জন্যই রহমত শব্দটি শুধুমাত্র আল্লাহ্‌র জন্য নির্দিষ্ট। আল্লাহর করুণাকে দু”ভাগে ভাগ করা যায়। (১) তিনি রহমান অর্থাৎ তার করুণা আয়াস নিরপেক্ষ অবদান। বিনা ক্লেশে, জাতি-ধর্ম ও পাপী পূণ্যবান নির্বিশেষে জীবনমাত্রই যা লাভ করে; যথা, পানি, বায়ু, সূর্যকিরণ, ইত্যাদি (২) আয়াসলভ্য অবদান, পরিশ্রমের বিনিময়ে জীব যা লাভ করে; যথা-ক্ষেতের ফসল, প্রাণীর আহার, আত্মার বিকাশ [মেধার বিকাশ] ইত্যাদি। আল্লাহ্‌র যে দয়া দ্বারা জীব প্রথমক্ত অবদানগুলো লাভ করে তাঁর সেই গুণবাচক নাম রহমান। আর যে গুণ দ্বারা জীব শেষোক্ত অবদানগুলি লাভ করে আল্লাহ্‌র সেই গুণবাচক নাম রাহীম। রহমান শব্দটি শুধুমাত্র আল্লাহ্‌র জন্য নির্দিষ্ট। কোনও সৃষ্টিকে ”রহমান” বলা চলে না। কারণ আল্লাহ্‌ ব্যতীত এমন কোনও সত্তা নাই যার রহমত বা দয়া সমগ্র বিশ্বচরাচরে সমভাবে বিস্তৃত হতে পারে। এ শব্দটি একক সত্তার সাথে সংযুক্ত, একক সত্তার জন্য নির্দিষ্ট। কিন্তু “রহীম”[Merciful,বা দয়াময়] শব্দটি সাধারণভাবে আল্লাহ্‌ ব্যতীতও ব্যবহার করা যায়। কারণ কোন ব্যক্তির পক্ষে অন্য ব্যক্তির প্রতি দয়া প্রদর্শন করা সম্ভব। এ জন্য “রহীম” শব্দটি মানুষের জন্য ব্যবহৃত হতে পারে।
+
+আল্লাহ্‌র অপার করুণা বুঝতে পারা, হৃদয়ঙ্গম করা, হৃদয়ে ধারণ করা, অনুভব করা, এর সম্বন্ধে চিন্তা করা প্রতিটি মুসলমানের কর্তব্য। তাইতো প্রতিটি সুরার প্রারম্ভে” বিসমিল্লাহির রাহমানির রাহীম” দিয়ে শুরু হয় যেনো প্রতিটি মুসলমান আল্লাহ্‌কে পাওয়ার জন্য, তাঁর করুণা পাওয়ার জন্য জীবন উৎসর্গ করে এবং শুধু তাঁরই করুণার প্রত্যাশী হয়।
+আরবী শব্দ ”রব”-এর সাধারণতঃ অনুবাদ করা হয় ”প্রভু” বা ”প্রতিপালক”। এই শব্দটির আরও অর্থ হয় ”লালনকারী”, ”ভরণপোষণকারী” ”পরিপূর্ণতা দানকারী” ইত্যাদি। আল্লাহ্‌ তাঁর সৃষ্ট সকল জগতের লালন পালন করেন।
+
+আয়াতঃ ৫
+যদি আমরা আমাদের হৃদয়ে প্রভুর ভালবাসা ও যত্ন, তাঁর করুণা ও দয়া এবং তাঁর ক্ষমতা, ন্যায়নীতি অনুধাবন করতে পারি তবে আমাদের হৃদয় মন ভক্তিপূর্ণ হয়ে তাঁর চরণে লুন্ঠিত হতে বাধ্য। আমরা সর্বান্তকরণে তাঁর আরাধনায় নিমগ্ন হব ফলে তাঁর করুণায় আমাদের ত্রুটি-বিচ্যুতি [Short Coming] বুঝতে পারবো ও তাঁর অসীম ক্ষমতা হৃদয়ঙ্গম করতে পারবো। হৃদয় দিয়ে সর্বশক্তিমানকে অনুভব করার অর্থ তাঁর মহত্ব, তাঁর ক্ষমতা, তাঁর দয়া ও করুণা নিজের ভিতরে অনুভব করা। এর ফলে আমরা শুধু যে সর্বান্তকরণে, ভক্তিপ্লুত হৃদয়ে তাঁর এবাদত করবো তাই-ই নয়; সুখে-দুঃখে, বিপদে-আপদে, দুঃখ-কষ্টে সর্ব অবস্থাতেই শুধু তাঁরই সাহায্য কামনা করবো। আমরা আমাদের হৃদয়ের ভিতর থেকে অনুভব করবো তিনি ব্যতীত আর কেউই আনুগত্য পাওয়ার যোগ্য নয়। আর কেউই আমাদের সাহায্যের ক্ষমতা রাখে না। এখানে বহুবচন আমরা ব্যবহার করা হয়েছে। এই ”আমরা” হচ্ছে বৃহত্তর মানব গোষ্ঠি যারা পরহেজগার, যারা আল্লাহর সান্নিধ্য চায়। অর্থাৎ আমরা এক বিশ্বভ্রাতৃত্বের অংশ যারা আল্লাহ্‌র করুণার প্রত্যাশী। ফলে এই বিশ্বাস আমাদের এই শক্তিকে উজ্জীবিত করে যে, আমরা একা নই।
+
+আয়াতঃ ৬
+”দান কর” কথাটি পরিচালিত কর” এই অর্থে ব্যবহৃত হতে পারে। অর্থাৎ আমাদের সরল পথে পরিচালিত কর, কারণ আমরা উদভ্রান্ত, উদ্দেশ্যহীনভাবে ঘুরে বেড়াচ্ছি সংসারের হাজারো প্রলোভনে। এখানে ”দান কর” কথাটি দ্বারা প্রথমতঃ বুঝানো হচ্ছে প্রভু আমাদের সঠিক পথের সন্ধান দেবেন। দ্বিতীয়তঃ প্রভু আমাদের সেই সঠিক পথে পরিচালিত করবেন, যে পথ তাঁর পছন্দের, তাঁর অনুমোদিত। কারণ আমাদের জ্ঞানের পরিধি অত্যন্ত ক্ষুদ্র। বিশ্বনিয়ন্তার হস্তক্ষেপ ব্যতীত সঠিক সরল পথের হদিস করা সম্ভব নয়। এই সরল পথ কখনও কখনও আপাতঃদৃষ্টিতে সঙ্কীর্ণ ও বিপদশঙ্কুল মনে হতে পারে, যে কারণে অনেকেই এই পথকে পরিহার করতে চায়। সঙ্কীর্ণ ও শঙ্কুল হওয়ার কারণ পৃথিবীতে জীবন ধারণের পথ লোভ-লালসা, হিংসা-দ্বেষ, দুঃখ-কষ্টে ভরা। চাকচিক্যময় পৃথিবী আমাদের সঠিক পথের চিহ্নকে ঢেকে দিতে চায়। আমাদের পরিচালিত করে ক্ষমতা, অহংকার, লোভ-লালসা ভরা অন্ধকারময় জগতে। এ দুটো পথের মধ্যে আমরা কিভাবে পার্থক্য করবো ? কিভাবে সঠিক পথকে খুঁজে নিতে পারবো? এর একটাই উপায় আর তা হচ্ছে সর্বশক্তিমানের কাছে পথের দিশা চেয়ে প্রার্থনা করা, তাঁর হেদায়েতের জন্য অনুগ্রহ প্রার্থনা করা। এই প্রার্থনার শক্তি অসীম, এর ফলে আল্লাহ্‌র নূর আমাদের হৃদয়কে আলোকিত করবে [Spiritual Insight], তাঁর আলোয় আমরা সঠিক পথের দিশা খুঁজে পাব। এই সেই পথ যে পথের যাত্রীরা আল্লাহ্‌র অনুগ্রহ লাভ করেছে। এদের সাথে আমরা পার্থক্য করতে পারবো তাদের-যারা অন্ধকার পথের যাত্রী। কারণ আল্লাহ্‌র কাছে অনুগ্রহ প্রার্থনার ফলে আমরা যে অন্তর্দৃষ্টি [Spiritual Insight] লাভ করবো তা আমাদের বিচার-বিবেচনার ক্ষমতা বৃদ্ধি করবে, ন্যায়-অন্যায়ের পার্থক্য করতে, সত্য-মিথ্যার পার্থক্য করতে, ভালো-মন্দের পার্থক্য করতে শেখাবে।
+
+আয়াতঃ ৭
+লক্ষ করুন ”Grace” শব্দটি, যার বাংলা অনুবাদ হতে পারে ”করুণা” বা ”অনুগ্রহ” যা শুধুমাত্র আল্লাহ্‌র ক্ষেত্রে প্রযোজ্য। কিন্তু Wrath- ”ক্রোধ” বা ”রোষ” শব্দটি হচ্ছে নৈর্ব্যক্তিক। যে কারও জন্য প্রযোজ্য। ”Grace” বা করুণা যা আমাদের সর্ব অবয়ব আমাদের সর্বসত্তাকে আচ্ছন্ন ও আবৃত্ত করে রাখে। অপরপক্ষে Wrath বা ”ক্রোধ” আমাদের কৃতকর্মেরই ফল। এটি ততটুকু যন্ত্রণাদায়ক যতটুকু আমাদের কৃতকর্ম। ”Grace” মানুষকে দেয় অপার শান্তি, জীবনকে ভরিয়ে তোলে শান্তির ঐক্যতানে [Peace and harmony]।
+
+এখানে দু”ধরণের বিপথগামী লোকের কথা বলা হয়েছে। প্রথম দল যারা আল্লাহ্‌র রোষে পতিত কারণ তারা ইচ্ছাকৃতভাবে আল্লাহ্‌র আইন অমান্য করে। ফলে এরা অন্ধকারে নিক্ষিপ্ত হয় অর্থাৎ তাদের আত্মা অন্ধকারে আবৃত হয়, বঞ্চিত হয় অন্তর্দৃষ্টি থেকে। দ্বিতীয় দল বিপথগামী কারণ আল্লাহ্‌র বাণীর প্রতি তাদের অবহেলা ও অমনোযোগ ইচ্ছাকৃত নয় বরং চিন্তাহীনতার জন্য। প্রত্যেক দলই তাদের নিজেদের কৃতকর্মের ফল ভোগ করবে। এই দু”দলের বিপরীত আর এক দল লোকের কথা বলা হয়েছে-যারা আল্লাহ্‌র করুণা ধারায় সঞ্জীবিত। যাদের পথ আল্লাহ্‌র নূরে আলোকিত। এই দলের লোকেরা আল্লাহ্‌র ইচ্ছার কাছে সমর্পিত। ফলে তাদের চলার পথের ভুল-ভ্রান্তি থেকে আল্লাহ তাদের রক্ষা করেন। চলার পথের নানা প্রলোভনকে তারা জয় করতে সক্ষম হন। এখানে অন্ধকারময় জগৎটা কোন জীবনের পথ বলে অনুবাদ করা ঠিক নয়; বরং বলা উচিত যে, জীবনে চলার পথে উপরে উল্লেখিত দু”রকমের বিপদজনক অবস্থায় আমরা পড়তে পারি। সেই বিপদ সঙ্কুল অবস্থা থেকে রক্ষা পাওয়ার জন্য এবং সঠিক পথে চলার শক্তির জন্যই আমাদের আকুল আবেদন।
+
+**********" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

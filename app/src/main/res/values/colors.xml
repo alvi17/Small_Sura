@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#329347</color>
+    <color name="colorPrimaryDark">#50a35e</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_back">#70b17a</color>
+    <color name="uccaron_back">#73c473</color>
+    <color name="uccaron_details_back">#c1ffc1</color>
+    <color name="meaning_back">#FFEFB15F</color>
+    <color name="meaning_details_back">#FFEDE2BC</color>
+    <color name="tafsir_back">#FF329DCA</color>
+
+</resources>
